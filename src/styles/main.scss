@@ -1,0 +1,14 @@
+@import "mixin.scss";
+@import 'header.scss';
+@import 'footer.scss';
+@import 'home.scss';
+@import 'about.scss';
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    main {
+        margin-top: 64px;
+    }
+}

@@ -1,0 +1,27 @@
+.slider {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url(/images/about/slider-vector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.our-pilots {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $primary;
+    color: $white;
+}
+
+.vision-mission {
+    .vision {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .mission {
+        background-color: $primary;
+        color: $white;
+    }
+}

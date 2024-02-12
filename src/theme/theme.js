@@ -1,8 +1,8 @@
-import { Roboto } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
-const roboto = Roboto({
+const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -12,17 +12,20 @@ const roboto = Roboto({
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      light: "#a14040",
+      main: "#8a1111",
+      dark: "#600b0b",
+      contrastText: "#fff",
     },
     secondary: {
-      main: "#19857b",
-    },
-    error: {
-      main: red.A400,
+      light: "#f08934",
+      main: "#ed6c02",
+      dark: "#a54b01",
+      contrastText: "#fff",
     },
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: montserrat.style.fontFamily,
   },
 });
 
