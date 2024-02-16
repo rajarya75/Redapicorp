@@ -6,7 +6,7 @@ export default function VisionMission() {
     <Box className="vision-mission">
       <Container maxWidth="xl" disableGutters>
         <Grid container spacing={2}>
-          <Grid item xs={6} className="vision">
+          <Grid item md={6} xs={12} className="vision">
             <Typography variant="h2" pb={3} className="animated-heading light">
               Vision
             </Typography>
@@ -16,12 +16,12 @@ export default function VisionMission() {
               comes to technical delivery and service excellence.
             </Typography>
           </Grid>
-          <Grid item xs={6}></Grid>
+          <Grid item md={6} xs={12}></Grid>
         </Grid>
 
         <Grid container spacing={2} mt={0}>
-          <Grid item xs={6}></Grid>
-          <Grid item xs={6} className="mission">
+          <Grid item md={6} xs={12}></Grid>
+          <Grid item md={6} xs={12} className="mission">
             <Typography variant="h2" pb={3} className="animated-heading light">
               Mission
             </Typography>

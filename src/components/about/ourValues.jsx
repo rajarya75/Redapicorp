@@ -6,12 +6,12 @@ export default function OurValues() {
     <Box className="our-value">
       <Container>
         <Grid container spacing={3}>
-          <Grid xs={12}>
+          <Grid item md={12}>
             <Typography variant="h2" pb={3} className="animated-heading light">
               Our Values
             </Typography>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -19,7 +19,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -27,7 +27,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -35,7 +35,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -43,7 +43,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -51,7 +51,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -59,7 +59,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -67,7 +67,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
@@ -75,7 +75,7 @@ export default function OurValues() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">

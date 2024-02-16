@@ -29,9 +29,18 @@ const theme = createTheme({
     h2: {
       fontSize: "2.625rem",
       fontWeight: "700",
+      "@media(max-width: 768px)": {
+        fontSize: "1.6rem",
+      },
+    },
+    body1: {
+      lineHeight: "1.6",
+      "@media(max-width: 768px)": {
+        fontSize: ".875rem",
+      },
     },
     body2: {
-      lineHeight: "1.5",
+      lineHeight: "1.6",
     },
   },
   palette: {

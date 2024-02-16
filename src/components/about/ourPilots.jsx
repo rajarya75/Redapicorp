@@ -6,7 +6,7 @@ export default function OurPilots() {
     <Box className="our-pilots">
       <Container>
         <Grid container spacing={2}>
-          <Grid item xs={6}>
+          <Grid item md={6}>
             <Typography variant="h2" pb={3} className="animated-heading light">
               Our Pilots
             </Typography>

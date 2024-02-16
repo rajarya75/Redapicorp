@@ -5,6 +5,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
+    overflow: hidden;
 
     .MuiTypography-body2 {
         text-align: justify;
@@ -26,23 +27,18 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
-    .strategies {
-        padding-top: 40px;
-        flex-wrap: wrap;
+    .strategy-item {
+        text-align: center;
+        margin-bottom: 55px;
+        padding-top: 30px;
 
-        .strategy-item {
-            text-align: center;
-            width: 30%;
-            margin-bottom: 55px;
-
-            .icon {
-                width: 100px;
-                height: 100px;
-                line-height: 88px;
-                border-radius: 50%;
-                border: 5px solid $primary;
-                margin: 10px auto;
-            }
+        .icon {
+            width: 100px;
+            height: 100px;
+            line-height: 88px;
+            border-radius: 50%;
+            border: 5px solid $primary;
+            margin: 10px auto;
         }
     }
 }
@@ -76,5 +72,49 @@
         padding: 70px 200px 100px 60px;
         height: 400px;
         text-align: justify;
+    }
+}
+
+@media(max-width: 768px) {
+    .slider {
+        background: none;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .our-pilots {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .our-strategy {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .strategy-item {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+    }
+
+    .our-value {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .value-box {
+            height: 170px;
+        }
+    }
+
+    .vision-mission {
+        .vision {
+            padding: 40px 20px 40px 35px;
+            height: auto;
+        }
+
+        .mission {
+            padding: 40px 20px 40px 35px;
+            height: auto;
+        }
     }
 }
