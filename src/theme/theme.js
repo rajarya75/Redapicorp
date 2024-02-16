@@ -26,6 +26,18 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: montserrat.style.fontFamily,
+    h2: {
+      fontSize: "2.625rem",
+      fontWeight: "700",
+    },
+    body2: {
+      lineHeight: "1.5",
+    },
+  },
+  palette: {
+    text: {
+      primary: "#000000",
+    },
   },
 });
 
