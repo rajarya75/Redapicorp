@@ -11,18 +11,22 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "@/../public/images/core/logo.png";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const pages = [
-  "Home",
-  "About Us",
-  "Service",
-  "Insights",
-  "Careers",
-  "Contact Us",
-  "Press Release",
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Service", path: "/service" },
+  { name: "Insights", path: "/insights" },
+  { name: "Careers", path: "careers" },
+  { name: "Contact Us", path: "/contacts" },
+  { name: "Press Release", path: "/press-release" },
 ];
 
 export default function Header() {
+  const router = useRouter();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -43,23 +47,26 @@ export default function Header() {
               alignItems: "center",
               width: "100%",
             }}
+            className="desktop-header"
           >
             <Image src={logo} alt="" />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 1, mx: 1, color: "black", display: "block" }}
+                  key={index}
+                  className={router.pathname === page.path ? "active" : ""}
                 >
-                  {page}
+                  <Link href={page.path}>{page.name}</Link>
                 </Button>
               ))}
             </Box>
           </Box>
 
           {/* Mobile */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            className="mobile-header"
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -87,9 +94,14 @@ export default function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Link
+                    href={page.path}
+                    className={router.pathname === page.path ? "active" : null}
+                  >
+                    {page.name}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
