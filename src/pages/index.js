@@ -14,11 +14,6 @@ export default function Home() {
       <Button variant="contained" color="secondary">
         secondary
       </Button>
-
-      <Button className="hello" variant="contained" color="error">
-        <span>heloo</span>
-        Primary
-      </Button>
     </Box>
   );
 }
