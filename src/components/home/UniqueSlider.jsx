@@ -1,10 +1,13 @@
 import React from "react";
 import { Box, Typography, Container, Grid, Button } from "@mui/material";
 import Slider from "react-slick";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export default function UniqueSlider() {
   var settings = {
     arrow: true,
+    loop: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 3,
@@ -12,6 +15,16 @@ export default function UniqueSlider() {
     autoplay: true,
     pauseOnHover: true,
     pauseOnDotsHover: true,
+    nextArrow: (
+      <ArrowForwardIosIcon
+        sx={{ fill: "#8a1111", width: "34px", height: "34px" }}
+      />
+    ),
+    prevArrow: (
+      <ArrowBackIosIcon
+        sx={{ fill: "#8a1111", width: "34px", height: "34px" }}
+      />
+    ),
   };
 
   return (
@@ -19,10 +32,15 @@ export default function UniqueSlider() {
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Typography variant="h2" color="primary">
-              REDAPi is small but{" "}
+            <Typography
+              variant="h2"
+              color="primary"
+              className="animated-heading"
+              pb={3}
+            >
+              REDAPi is small but unique.
             </Typography>
-            <Typography variant="h6" color="primary">
+            <Typography variant="h6" color="primary" sx={{ mt: "-10px" }}>
               Read below to solve all your queries:
             </Typography>
           </Grid>

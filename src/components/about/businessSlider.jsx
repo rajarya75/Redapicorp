@@ -6,7 +6,9 @@ export default function BusinessSlider() {
   var settings = {
     dots: true,
     infinite: true,
+    loop: true,
     fade: true,
+    arrows: false,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,

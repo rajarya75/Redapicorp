@@ -6,12 +6,14 @@ export default function HomeSlider() {
   var settings = {
     fade: true,
     dots: true,
+    loop: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    pauseOnHover: true,
+    // pauseOnHover: true,
     pauseOnDotsHover: true,
   };
 
