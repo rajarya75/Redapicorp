@@ -23,6 +23,9 @@ const theme = createTheme({
       dark: "#a54b01",
       contrastText: "#fff",
     },
+    text: {
+      primary: "#000000",
+    },
   },
   typography: {
     fontFamily: montserrat.style.fontFamily,
@@ -43,9 +46,13 @@ const theme = createTheme({
       lineHeight: "1.6",
     },
   },
-  palette: {
-    text: {
-      primary: "#000000",
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 20,
+        },
+      },
     },
   },
 });

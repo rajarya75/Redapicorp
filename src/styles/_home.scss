@@ -1,0 +1,39 @@
+.home_slider {
+    min-height: 462.4px;
+
+    .slick-dots {
+        bottom: -50px;
+    }
+}
+
+.home_services {}
+
+.unique_slider {
+    padding-top: 55px;
+    padding-bottom: 85px;
+
+    .slick-arrow {
+        &::before {
+            color: $primary;
+        }
+    }
+
+    .unique_item {
+        text-align: center;
+        padding-top: 10px;
+
+        .icons {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: $primary;
+            margin: 20px auto;
+        }
+    }
+}
+
+.ecosystem {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #7c7979;
+}

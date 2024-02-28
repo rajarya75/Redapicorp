@@ -1,19 +1,24 @@
-import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import HomeSlider from "@/components/home/HomeSlider";
+import OurServices from "@/components/home/OurServices";
+import UniqueSlider from "@/components/home/UniqueSlider";
+import Ecosystem from "@/components/home/Ecosystem";
+import Blog from "@/components/home/Blog";
+import Events from "@/components/home/Events";
+import News from "@/components/home/News";
+import CtaSection from "@/components/core/CtaSection";
 
 export default function Home() {
   return (
-    <Box>
-      <Typography variant="h1" sx={{ color: "primary.main" }}>
-        hello
-      </Typography>
-
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
-      <Button variant="contained" color="secondary">
-        secondary
-      </Button>
-    </Box>
+    <>
+      <HomeSlider />
+      <OurServices />
+      <UniqueSlider />
+      <Ecosystem />
+      <News />
+      <Blog />
+      <Events />
+      <CtaSection />
+    </>
   );
 }
