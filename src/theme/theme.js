@@ -51,8 +51,6 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 20,
-          paddingLeft: 28,
-          paddingRight: 28,
         },
       },
     },
