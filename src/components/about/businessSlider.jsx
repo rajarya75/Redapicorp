@@ -46,8 +46,7 @@ export default function BusinessSlider() {
               </Box>
               <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
                 <Typography variant="h2" pb={3} className="animated-heading">
-                  Read the Globe,
-                  <br /> Win the World
+                  Read the Globe,Win the World
                 </Typography>
                 <Typography variant="body2">
                   We offer end to end Managed Infrastructure Services,

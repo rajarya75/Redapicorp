@@ -17,7 +17,7 @@ import { useRouter } from "next/router";
 const pages = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Service", path: "/service" },
+  { name: "Services", path: "/services" },
   { name: "Insights", path: "/insights" },
   { name: "Careers", path: "careers" },
   { name: "Contact Us", path: "/contacts" },

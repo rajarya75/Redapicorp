@@ -63,7 +63,7 @@ export default function HomeSlider() {
 
               <Box>
                 <Typography variant="h2" pb={3} className="animated-heading">
-                  Spy — <br /> We are far ahead of you
+                  Spy — We are far ahead of you
                 </Typography>
                 <Box>
                   <Button variant="contained" color="primary" size="large">
