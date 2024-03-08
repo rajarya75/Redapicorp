@@ -14,6 +14,7 @@ export default function MyDocument(props) {
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="emotion-insertion-point" content="" />
+        <meta charSet="UTF-8" />
         <link
           rel="stylesheet"
           type="text/css"
