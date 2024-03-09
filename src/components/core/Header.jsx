@@ -17,7 +17,30 @@ import { useRouter } from "next/router";
 const pages = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
+  {
+    name: "Services",
+    path: "",
+    children: [
+      { name: "Managed Services", path: "/managed-services" },
+      { name: "Carrier Services", path: "/carrier-services" },
+      {
+        name: "Data Science, Engineering and Operations",
+        path: "/data-Science-engineering-and-operations",
+      },
+      {
+        name: "CyberSecurity and Compliance",
+        path: "/cyberSecurity-and-compliance",
+      },
+      {
+        name: "Technology Engineering and Consultancy Services",
+        path: "/technology-engineering-and-consultancy-services",
+      },
+      {
+        name: "Datacenter & Transformation",
+        path: "/datacenter-and-transformation",
+      },
+    ],
+  },
   { name: "Insights", path: "/insights" },
   { name: "Careers", path: "careers" },
   { name: "Contact Us", path: "/contacts" },
