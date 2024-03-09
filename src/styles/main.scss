@@ -51,4 +51,11 @@
         font-size: 14px;
     }
 
+    .MuiButtonBase-root {
+        &.btn-light {
+            color: $primary;
+            background-color: $white;
+        }
+    }
+
 }
