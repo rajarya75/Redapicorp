@@ -13,15 +13,19 @@ export default function AddValues() {
               className="animated-heading"
               pb={3}
             >
-              How REDAPi Managed Services Offerings
-              <br /> Adds Value
+              How REDAPi Technology Engineering and Consultancy Services Adds
+              Value
+            </Typography>
+            <Typography variant="subtitle1" color="primary">
+              Technology Engineering and Consultancy Services led approach
+              includes a whole lifecycle coverage with
             </Typography>
           </Grid>
           <Grid item md={4} xs={12}>
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Stunted Downtime & Increase Productivity
+                Assessment and Strategy
               </Typography>
             </Box>
           </Grid>
@@ -29,7 +33,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Compliance & Security
+                Planning and Design
               </Typography>
             </Box>
           </Grid>
@@ -37,7 +41,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Increased IT Staff Productivity
+                Deployment and Migration
               </Typography>
             </Box>
           </Grid>
@@ -45,7 +49,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Minimize Resourcing Cost
+                Integrations, Operations and Optimization
               </Typography>
             </Box>
           </Grid>
@@ -53,7 +57,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Quality Assurance & Expert Advice
+                Maximize Availability and Reduces Complexity
               </Typography>
             </Box>
           </Grid>
@@ -61,31 +65,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Truncate Business Impact
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                Attainable IT Investment
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                Increase Business Productivity
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                24x7x365 Support
+                Cost Optimization
               </Typography>
             </Box>
           </Grid>

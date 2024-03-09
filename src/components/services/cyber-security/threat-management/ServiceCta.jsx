@@ -8,8 +8,8 @@ export default function ServiceCta() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography variant="h2" color="white">
-              for Quality Delivery and Operational <br />
-              Excellence.
+              Risk is Manageable. Trust and Connect with us to
+              <br /> Explore More
             </Typography>
             <Box pt={3}>
               <Button className="btn-light" variant="contained" size="large">

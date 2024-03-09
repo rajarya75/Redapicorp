@@ -8,14 +8,15 @@ export default function Offerings() {
         <Grid container spacing={3}>
           <Grid item md={12}>
             <Typography variant="h2" pb={3} className="animated-heading light">
-              Milestones of Managed Service Offerings
+              Milestones of Technology Engineering and Consultancy Services
+              Offerings
             </Typography>
           </Grid>
           <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Network Infrastructure Services
+                Vendor Management and Engineering
               </Typography>
             </Box>
           </Grid>
@@ -23,7 +24,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Datacenter Infrastructure Services
+                Network Engineering and Planning
               </Typography>
             </Box>
           </Grid>
@@ -31,7 +32,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Security Infrastructure Services
+                Cloud Engineering and Migration
               </Typography>
             </Box>
           </Grid>
@@ -39,7 +40,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Server Infrastructure Services
+                Software Defined Datacenter Engineering
               </Typography>
             </Box>
           </Grid>
@@ -47,7 +48,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Cloud Infrastructure Services
+                SD-WAN Engineering
               </Typography>
             </Box>
           </Grid>

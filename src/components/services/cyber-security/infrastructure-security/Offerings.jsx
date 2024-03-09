@@ -8,14 +8,18 @@ export default function Offerings() {
         <Grid container spacing={3}>
           <Grid item md={12}>
             <Typography variant="h2" pb={3} className="animated-heading light">
-              Milestones of Managed Service Offerings
+              Milestones of Infrastructure Security Offerings
+            </Typography>
+            <Typography variant="subtitle1" color="white">
+              Each component of your cyber security system has its own set of
+              challenges. We assist you in thoroughly addressing each.
             </Typography>
           </Grid>
           <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Network Infrastructure Services
+                Network Security
               </Typography>
             </Box>
           </Grid>
@@ -23,7 +27,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Datacenter Infrastructure Services
+                Cloud Security
               </Typography>
             </Box>
           </Grid>
@@ -31,7 +35,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Security Infrastructure Services
+                Mobile Security
               </Typography>
             </Box>
           </Grid>
@@ -39,7 +43,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Server Infrastructure Services
+                Endpoint Security
               </Typography>
             </Box>
           </Grid>
@@ -47,7 +51,23 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Cloud Infrastructure Services
+                Application Security
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item md={4} xs={12}>
+            <Box className="value-box"></Box>
+            <Box className="text-center" pt={1}>
+              <Typography variant="body1" color="white">
+                IOT Security
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item md={4} xs={12}>
+            <Box className="value-box"></Box>
+            <Box className="text-center" pt={1}>
+              <Typography variant="body1" color="white">
+                Zero Trust Security
               </Typography>
             </Box>
           </Grid>

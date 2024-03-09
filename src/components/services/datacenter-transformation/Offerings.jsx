@@ -8,7 +8,7 @@ export default function Offerings() {
         <Grid container spacing={3}>
           <Grid item md={12}>
             <Typography variant="h2" pb={3} className="animated-heading light">
-              Milestones of Managed Service Offerings
+              Milestones of Datacenter Transformation Offerings
             </Typography>
           </Grid>
           <Grid item md={4} xs={12}>

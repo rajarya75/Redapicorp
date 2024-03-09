@@ -30,29 +30,43 @@ export default function MSlider() {
                   component={"h1"}
                   className="animated-heading"
                 >
-                  Achieving Excellence in IT
-                  <br /> Management and Operations
+                  The World is Watching You But We are Watching the World!
                 </Typography>
                 <Typography variant="body2">
-                  REDAPi “Managed Services” follows the proactive management
-                  approach to IT - attempting to conduct maintenance, upgrades,
-                  system monitoring and issues resolution on a day to day
-                  operation basis, with the goal of preventing problems before
-                  they impact customer business.
+                  Security threats can affect network connections, apps,
+                  websites, social media, mobile, email, and more in many ways.
+                  Your security program may be stretched when you adopt IoT,
+                  virtual environments, and cloud applications because it
+                  wasn&apos;t created to match your business operations. The
+                  task of tracking issues becomes more complex with the addition
+                  of third-party open-source components and the question of who
+                  does what in IT.
                 </Typography>
               </Box>
               <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
                 <Typography variant="h2" pb={3} className="animated-heading">
-                  From Server to Cloud – We Manage All
+                  Risk is Manageable. Trust and Try Us.
                 </Typography>
                 <Typography variant="body2">
-                  We provide a complete end to end managed services solution
-                  comprising people, process and technology that help our
-                  customers to offload their IT management and operational tasks
-                  to us by strategically managing the customers end to end
-                  operations through concatenation of solutions for service desk
-                  support, application management, incident management, problem
-                  management, change management and vendor management.
+                  In this constantly changing environment, the ability to find
+                  something is essential for fixing it, and hackers are becoming
+                  more adept at hiding every day. Investing in more tools to
+                  address specific threats can make integration and remediation
+                  more challenging. This problem is becoming more serious, and
+                  it fails to bridge security and IT operations, reduce risk, or
+                  communicate ROI to the board.
+                </Typography>
+              </Box>
+              <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
+                <Typography variant="h2" pb={3} className="animated-heading">
+                  Be a Cool Organization as We are Working at The Backend
+                </Typography>
+                <Typography variant="body2">
+                  To effectively manage cyber threats, one must go beyond just
+                  identifying and responding to ongoing attacks against the
+                  organization. Proactive security policies and tools that can
+                  identify and block these attacks are necessary to minimize the
+                  potential damage and cost associated with these attacks.
                 </Typography>
               </Box>
             </Slider>

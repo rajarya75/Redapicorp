@@ -13,7 +13,7 @@ export default function AddValues() {
               className="animated-heading"
               pb={3}
             >
-              How REDAPi Managed Services Offerings
+              How REDAPi Infrastructure Security Services
               <br /> Adds Value
             </Typography>
           </Grid>
@@ -21,7 +21,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Stunted Downtime & Increase Productivity
+                Account Security Enhancement
               </Typography>
             </Box>
           </Grid>
@@ -29,7 +29,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Compliance & Security
+                Ease of Access
               </Typography>
             </Box>
           </Grid>
@@ -37,7 +37,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Increased IT Staff Productivity
+                Improvement in Productivity
               </Typography>
             </Box>
           </Grid>
@@ -45,47 +45,7 @@ export default function AddValues() {
             <Box className="unique_item">
               <Box className="icons"></Box>
               <Typography variant="h6" color="primary">
-                Minimize Resourcing Cost
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                Quality Assurance & Expert Advice
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                Truncate Business Impact
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                Attainable IT Investment
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                Increase Business Productivity
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="unique_item">
-              <Box className="icons"></Box>
-              <Typography variant="h6" color="primary">
-                24x7x365 Support
+                Centralized Access Control
               </Typography>
             </Box>
           </Grid>

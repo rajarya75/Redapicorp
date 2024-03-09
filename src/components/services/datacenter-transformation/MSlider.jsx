@@ -23,36 +23,34 @@ export default function MSlider() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Slider {...settings}>
-              <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
+              <Box sx={{ maxWidth: { md: "80%", xs: "100%" } }}>
                 <Typography
                   variant="h2"
                   pb={3}
                   component={"h1"}
                   className="animated-heading"
                 >
-                  Achieving Excellence in IT
-                  <br /> Management and Operations
+                  Major Technology Shift – Simplified Advocacy and Management
                 </Typography>
                 <Typography variant="body2">
-                  REDAPi “Managed Services” follows the proactive management
-                  approach to IT - attempting to conduct maintenance, upgrades,
-                  system monitoring and issues resolution on a day to day
-                  operation basis, with the goal of preventing problems before
-                  they impact customer business.
+                  We bring to you, data center virtualization services, an
+                  infrastructure service that is based on the process of
+                  designing, developing and deploying a SDN data center based on
+                  virtualization solutions.
                 </Typography>
               </Box>
               <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
                 <Typography variant="h2" pb={3} className="animated-heading">
-                  From Server to Cloud – We Manage All
+                  Your Questions , Our Answers
                 </Typography>
                 <Typography variant="body2">
-                  We provide a complete end to end managed services solution
-                  comprising people, process and technology that help our
-                  customers to offload their IT management and operational tasks
-                  to us by strategically managing the customers end to end
-                  operations through concatenation of solutions for service desk
-                  support, application management, incident management, problem
-                  management, change management and vendor management.
+                  Software-defined data centers are considered by many to be the
+                  next step in the evolution of virtualization and cloud
+                  computing as it provides a solution to support both legacy
+                  enterprise applications and new cloud computing services. It
+                  is our goal and responsibility to maintain ease of access to a
+                  virtualized environment that is durable, resilient and
+                  underpins the requirement for today and future.
                 </Typography>
               </Box>
             </Slider>

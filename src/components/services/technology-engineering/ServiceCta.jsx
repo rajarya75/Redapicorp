@@ -8,12 +8,13 @@ export default function ServiceCta() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography variant="h2" color="white">
-              for Quality Delivery and Operational <br />
-              Excellence.
+              Inviting to Listen and Understand Our “Proof of Concept” Before
+              Jumping to the “Delivery Mode”.{" "}
+              <Typography variant="h4">Are you Willing to Listen?</Typography>
             </Typography>
             <Box pt={3}>
               <Button className="btn-light" variant="contained" size="large">
-                Get in Touch
+                Write to us Today
               </Button>
             </Box>
           </Grid>

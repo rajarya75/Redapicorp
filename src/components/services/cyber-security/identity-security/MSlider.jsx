@@ -30,29 +30,22 @@ export default function MSlider() {
                   component={"h1"}
                   className="animated-heading"
                 >
-                  Achieving Excellence in IT
-                  <br /> Management and Operations
+                  Identity Starts with I, Don&apos;t Let it Become Everything
                 </Typography>
                 <Typography variant="body2">
-                  REDAPi “Managed Services” follows the proactive management
-                  approach to IT - attempting to conduct maintenance, upgrades,
-                  system monitoring and issues resolution on a day to day
-                  operation basis, with the goal of preventing problems before
-                  they impact customer business.
+                  Technology is necessary for every organization to operate
+                  efficiently, and without identity security, using that
+                  technology is not possible.Identity security is also known as
+                  identity governance and identity management. It safeguards
+                  organizations against cybersecurity threats that arise when
+                  they provide technology access to geographically dispersed
+                  teams accessing data in the cloud.
                 </Typography>
-              </Box>
-              <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
-                <Typography variant="h2" pb={3} className="animated-heading">
-                  From Server to Cloud – We Manage All
-                </Typography>
-                <Typography variant="body2">
-                  We provide a complete end to end managed services solution
-                  comprising people, process and technology that help our
-                  customers to offload their IT management and operational tasks
-                  to us by strategically managing the customers end to end
-                  operations through concatenation of solutions for service desk
-                  support, application management, incident management, problem
-                  management, change management and vendor management.
+                <Typography variant="body2" mt={2}>
+                  It aids in the secure authentication, central control, and
+                  auditing of how applications, DevOps and automation tools use
+                  secrets and privileged credentials to access databases, cloud
+                  environments and other sensitive resources.
                 </Typography>
               </Box>
             </Slider>

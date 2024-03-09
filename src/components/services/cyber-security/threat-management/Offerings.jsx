@@ -8,14 +8,19 @@ export default function Offerings() {
         <Grid container spacing={3}>
           <Grid item md={12}>
             <Typography variant="h2" pb={3} className="animated-heading light">
-              Milestones of Managed Service Offerings
+              Why Threat Management is Crucial for Business
+            </Typography>
+            <Typography variant="subtitle1" color="white">
+              Effectively managing cybersecurity risks has become a growing
+              challenge for all organizations. Several factors contribute to
+              this, including:
             </Typography>
           </Grid>
           <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Network Infrastructure Services
+                Increase in Network Complexity
               </Typography>
             </Box>
           </Grid>
@@ -23,7 +28,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Datacenter Infrastructure Services
+                Acceleration of Cyber Threats Landscape
               </Typography>
             </Box>
           </Grid>
@@ -31,23 +36,7 @@ export default function Offerings() {
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>
               <Typography variant="body1" color="white">
-                Security Infrastructure Services
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="value-box"></Box>
-            <Box className="text-center" pt={1}>
-              <Typography variant="body1" color="white">
-                Server Infrastructure Services
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <Box className="value-box"></Box>
-            <Box className="text-center" pt={1}>
-              <Typography variant="body1" color="white">
-                Cloud Infrastructure Services
+                Under-Staff and Not-Qualified Security Teams
               </Typography>
             </Box>
           </Grid>

@@ -30,29 +30,32 @@ export default function MSlider() {
                   component={"h1"}
                   className="animated-heading"
                 >
-                  Achieving Excellence in IT
-                  <br /> Management and Operations
+                  Collaborate with REDAPi to Ensure Reliable Access and Security
+                  of Shared Data
                 </Typography>
                 <Typography variant="body2">
-                  REDAPi “Managed Services” follows the proactive management
-                  approach to IT - attempting to conduct maintenance, upgrades,
-                  system monitoring and issues resolution on a day to day
-                  operation basis, with the goal of preventing problems before
-                  they impact customer business.
+                  The definition of cybersecurity infrastructure encompasses
+                  both physical and cybersecurity systems and assets that are so
+                  vital to your organization that the incapacity or destruction
+                  of them would have a debilitating impact on the organization.
+                  A variety of evolving sources are constantly posing a threat
+                  to your infrastructure. Compliance puts pressure on you, and
+                  you need additional expertise.
                 </Typography>
               </Box>
               <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
                 <Typography variant="h2" pb={3} className="animated-heading">
-                  From Server to Cloud – We Manage All
+                  Digging Deep with Correct Approach to Analyze the
+                  Infrastructure
                 </Typography>
                 <Typography variant="body2">
-                  We provide a complete end to end managed services solution
-                  comprising people, process and technology that help our
-                  customers to offload their IT management and operational tasks
-                  to us by strategically managing the customers end to end
-                  operations through concatenation of solutions for service desk
-                  support, application management, incident management, problem
-                  management, change management and vendor management.
+                  Are you using new security tools to plug holes? Although this
+                  reactive method may solve short-term problems, it eventually
+                  leads to an accumulation of diverse technologies with
+                  inadequate resources to manage them, resulting in increased
+                  risk, complexity, and inefficiency.Ensure efficient,
+                  effective, and scaled operations by examining every part of
+                  your infrastructure.
                 </Typography>
               </Box>
             </Slider>
