@@ -55,6 +55,11 @@
         &.btn-light {
             color: $primary;
             background-color: $white;
+
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+            }
         }
     }
 

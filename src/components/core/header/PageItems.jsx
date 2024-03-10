@@ -33,16 +33,20 @@ export const PageItems = [
             name: "Threat Management ",
             path: "/services/cyberSecurity-and-compliance/threat-management",
           },
+          {
+            name: "Secure Access Service Edge (SASE)",
+            path: "/services/cyberSecurity-and-compliance/secure-access-service-edge",
+          },
         ],
       },
       {
         name: "Technology Engineering and Consultancy Services",
         path: "/services/technology-engineering-and-consultancy-services",
       },
-      {
-        name: "Datacenter & Transformation",
-        path: "/services/datacenter-and-transformation",
-      },
+      // {
+      //   name: "Datacenter & Transformation",
+      //   path: "/services/datacenter-and-transformation",
+      // },
     ],
   },
   { name: "Insights", path: "/insights" },

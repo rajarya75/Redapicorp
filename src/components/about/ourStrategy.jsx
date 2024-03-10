@@ -6,7 +6,7 @@ export default function OurStrategy() {
     <Box className="our-strategy">
       <Container>
         <Grid container spacing={2}>
-          <Grid item md={12}>
+          <Grid item md={12} className="text-center">
             <Typography variant="h2" pb={3} className="animated-heading">
               Our Startegy
             </Typography>

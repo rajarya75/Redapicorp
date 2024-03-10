@@ -36,6 +36,13 @@ const theme = createTheme({
         fontSize: "1.6rem",
       },
     },
+    h3: {
+      fontSize: "2rem",
+      fontWeight: "700",
+      "@media(max-width: 768px)": {
+        fontSize: "1rem",
+      },
+    },
     body1: {
       lineHeight: "1.6",
       "@media(max-width: 768px)": {

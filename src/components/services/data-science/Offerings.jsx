@@ -6,7 +6,7 @@ export default function Offerings() {
     <Box className="our-value home_services">
       <Container>
         <Grid container spacing={3}>
-          <Grid item md={12}>
+          <Grid item md={12} className="text-center">
             <Typography variant="h2" pb={3} className="animated-heading light">
               Milestones of Data Science, Engineering and Operations Offerings
             </Typography>
@@ -35,6 +35,7 @@ export default function Offerings() {
               </Typography>
             </Box>
           </Grid>
+          <Grid item md={2}></Grid>
           <Grid item md={4} xs={12}>
             <Box className="value-box"></Box>
             <Box className="text-center" pt={1}>

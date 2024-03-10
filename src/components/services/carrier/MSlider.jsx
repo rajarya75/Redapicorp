@@ -23,7 +23,7 @@ export default function MSlider() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Slider {...settings}>
-              <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
+              <Box sx={{ maxWidth: { md: "70%", xs: "100%" } }}>
                 <Typography
                   variant="h2"
                   pb={3}
@@ -39,7 +39,7 @@ export default function MSlider() {
                   </Button>
                 </Box>
               </Box>
-              <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
+              <Box sx={{ maxWidth: { md: "70%", xs: "100%" } }}>
                 <Typography variant="h2" pb={3} className="animated-heading">
                   Low-Latency and NNI Partner Free Geo Reachability with 99.999%
                   Uptime..

@@ -8,7 +8,7 @@ export default function ServiceCta() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography variant="h2" color="white">
-              for Quality Delivery and Operational <br />
+              For Quality Delivery and Operational <br />
               Excellence.
             </Typography>
             <Box pt={3}>

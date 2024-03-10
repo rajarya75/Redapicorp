@@ -6,7 +6,7 @@ export default function OurServices() {
     <Box className="our-value home_services">
       <Container>
         <Grid container spacing={3}>
-          <Grid item md={12}>
+          <Grid item md={12} className="text-center">
             <Typography variant="h2" pb={3} className="animated-heading light">
               Our Services
             </Typography>

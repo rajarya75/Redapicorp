@@ -31,7 +31,7 @@ export default function UniqueSlider() {
     <Box className="unique_slider">
       <Container>
         <Grid container spacing={2}>
-          <Grid item xs={12}>
+          <Grid item xs={12} className="text-center">
             <Typography
               variant="h2"
               color="primary"

@@ -14,7 +14,17 @@ export default function Footer() {
           <Grid container spacing={2}>
             <Grid item md={12}>
               <Link href={"#"}>
-                <Image src={logo} alt="logo" />{" "}
+                <Typography variant="h3" component={"span"} color="primary">
+                  REDAPi
+                </Typography>
+                <Typography
+                  variant="h3"
+                  component={"span"}
+                  color="#7f7f7f"
+                  pl={1}
+                >
+                  Corporation
+                </Typography>
               </Link>
             </Grid>
             <Grid item md={5}>
