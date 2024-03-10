@@ -3,7 +3,7 @@ export const PageItems = [
   { name: "About", path: "/about" },
   {
     name: "Services",
-    path: "/services",
+    path: "",
     submenu: [
       {
         name: "Managed Services",

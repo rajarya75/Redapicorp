@@ -10,28 +10,13 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <>
-      {/* <Box sx={{ display: { xs: "none", md: "flex" } }}>
+    <nav>
+      <ul className="menus">
         {PageItems.map((page, index) => {
           const depthLevel = 0;
-          <Button
-            key={index}
-            className={router.pathname === page.path ? "active" : ""}
-          >
-            <Link href={page.path}>{page.name}</Link>
-          </Button>;
+          return <MenuItems items={page} key={index} depthLevel={depthLevel} />;
         })}
-      </Box> */}
-      <nav>
-        <ul className="menus">
-          {PageItems.map((page, index) => {
-            const depthLevel = 0;
-            return (
-              <MenuItems items={page} key={index} depthLevel={depthLevel} />
-            );
-          })}
-        </ul>
-      </nav>
-    </>
+      </ul>
+    </nav>
   );
 }

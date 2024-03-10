@@ -7,34 +7,59 @@ import { Button } from "@mui/material";
 
 export default function MenuItems({ items, depthLevel }) {
   const [dropdown, setDropdown] = useState(false);
-
-  let ref = useRef();
+  const ref = useRef();
 
   useEffect(() => {
     const handler = (event) => {
-      if (dropdown && ref.current && !ref.current.contains(event.target)) {
+      if (
+        dropdown &&
+        ref.current &&
+        !ref.current.contains(event.target) &&
+        typeof window !== "undefined"
+      ) {
         setDropdown(false);
       }
     };
+
     document.addEventListener("mousedown", handler);
     document.addEventListener("touchstart", handler);
+
     return () => {
-      // Cleanup the event listener
       document.removeEventListener("mousedown", handler);
       document.removeEventListener("touchstart", handler);
     };
   }, [dropdown]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 960) {
+        setDropdown(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const onMouseEnter = () => {
-    window.innerWidth > 960 && setDropdown(true);
+    if (typeof window !== "undefined" && window.innerWidth > 960) {
+      setDropdown(true);
+    }
   };
 
   const onMouseLeave = () => {
-    window.innerWidth > 960 && setDropdown(false);
+    if (typeof window !== "undefined" && window.innerWidth > 960) {
+      setDropdown(false);
+    }
   };
 
   const closeDropdown = () => {
-    dropdown && setDropdown(false);
+    if (dropdown) {
+      setDropdown(false);
+    }
   };
 
   return (
@@ -45,7 +70,7 @@ export default function MenuItems({ items, depthLevel }) {
       onMouseLeave={onMouseLeave}
       onClick={closeDropdown}
     >
-      {items.url && items.submenu ? (
+      {items.submenu && (
         <>
           <Button
             type="button"
@@ -53,36 +78,16 @@ export default function MenuItems({ items, depthLevel }) {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
-            {window.innerWidth < 960 && depthLevel === 0 ? (
+            {depthLevel === 0 &&
+            typeof window !== "undefined" &&
+            window.innerWidth < 960 ? (
               items.name
             ) : (
               <Link href={items.path}>{items.name}</Link>
             )}
-
-            {depthLevel > 0 && window.innerWidth < 960 ? null : depthLevel >
-                0 && window.innerWidth > 960 ? (
-              <KeyboardArrowRightIcon />
-            ) : (
-              <KeyboardArrowDownIcon />
-            )}
-          </Button>
-
-          <Dropdown
-            depthLevel={depthLevel}
-            submenus={items.submenu}
-            dropdown={dropdown}
-          />
-        </>
-      ) : !items.url && items.submenu ? (
-        <>
-          <Button
-            type="button"
-            aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
-          >
-            {items.name}{" "}
-            {depthLevel > 0 ? (
+            {depthLevel > 0 &&
+            typeof window !== "undefined" &&
+            window.innerWidth > 960 ? (
               <KeyboardArrowRightIcon />
             ) : (
               <KeyboardArrowDownIcon />
@@ -94,9 +99,8 @@ export default function MenuItems({ items, depthLevel }) {
             dropdown={dropdown}
           />
         </>
-      ) : (
-        <Link href={items.path}>{items.name}</Link>
       )}
+      {!items.submenu && <Link href={items.path}>{items.name}</Link>}
     </li>
   );
 }
