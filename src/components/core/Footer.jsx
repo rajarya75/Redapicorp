@@ -12,9 +12,17 @@ export default function Footer() {
       <Box className="footer">
         <Container>
           <Grid container spacing={2}>
-            <Grid item md={12}>
+            <Grid item md={5}>
+              <Typography variant="h5" className="animated-heading">
+                Worldwide Headquarters
+              </Typography>
               <Link href={"#"}>
-                <Typography variant="h3" component={"span"} color="primary">
+                <Typography
+                  variant="h3"
+                  component={"span"}
+                  color="primary"
+                  fontSize={29}
+                >
                   REDAPi
                 </Typography>
                 <Typography
@@ -22,22 +30,16 @@ export default function Footer() {
                   component={"span"}
                   color="#7f7f7f"
                   pl={1}
+                  fontSize={29}
                 >
                   Corporation
                 </Typography>
               </Link>
+              <Typography variant="subtitle2" pt={1} fontSize={17}>
+                YLIOPISTOKATU 7, Helsinki, Finland
+              </Typography>
             </Grid>
             <Grid item md={5}>
-              <Typography variant="h5" className="animated-heading">
-                Worldwide Headquarters
-              </Typography>
-              <Typography variant="subtitle2">
-                REDAPi Corporation, <br />
-                YLIOPISTOKATU 7, <br />
-                Helsinki, Finland
-              </Typography>
-            </Grid>
-            <Grid item md={4}>
               <Typography variant="h5" className="animated-heading">
                 Company
               </Typography>
@@ -53,7 +55,7 @@ export default function Footer() {
                 <Link href={"#"}> Blogs</Link>
               </Box>
             </Grid>
-            <Grid item md={3}>
+            <Grid item md={2}>
               <Typography variant="h5" className="animated-heading">
                 Follow Us
               </Typography>
