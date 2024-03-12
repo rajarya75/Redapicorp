@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
 import Slider from "react-slick";
 
-export default function MSlider() {
+export default function ContactSlider() {
   var settings = {
     dots: false,
     infinite: true,
@@ -18,27 +18,23 @@ export default function MSlider() {
   };
 
   return (
-    <Box className="slider">
+    <Box className="slider" sx={{ borderBottom: "2px solid #dcdcdc" }}>
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Slider {...settings}>
-              <Box sx={{ maxWidth: { md: "70%", xs: "100%" } }}>
+              <Box sx={{ maxWidth: { md: "60%", xs: "100%" } }}>
                 <Typography
                   variant="h2"
                   pb={3}
                   component={"h1"}
                   className="animated-heading"
                 >
-                  Transform Data into Action with Fourth Paradigm of Science
+                  We are Just Few Clicks Away.
                 </Typography>
-                <Typography variant="body2">
-                  Data science is a concept which brings uniformity in raw data
-                  using statistics, data analysis, informatics, and their
-                  related methods to create a clear visuality to understand and
-                  analyze the actual phenomena of the data. It is becoming an
-                  integral part of science and computation and so it’s
-                  considered as a <b>fourth paradigm</b> of science.
+                <Typography variant="h6">
+                  Please complete the contact form below with your queries and
+                  one of our experts will be in touch shortly.
                 </Typography>
               </Box>
             </Slider>

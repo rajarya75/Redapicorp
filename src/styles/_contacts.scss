@@ -1,0 +1,61 @@
+.contact-info {
+    background-color: $primary;
+    padding: 60px 30px;
+    color: $white;
+    text-align: center;
+
+    .gen-enquiry {
+        border: 1px solid $white;
+        padding: 70px 30px 50px 30px;
+        border-radius: 11px;
+
+        h3 {
+            margin-top: -90px;
+            background-color: $primary;
+            padding-bottom: 40px;
+            display: table;
+            margin-left: 16%;
+        }
+    }
+
+    .regional-sales {
+        border: 1px solid $white;
+        padding: 70px 30px 50px 30px;
+        margin-top: 60px;
+        border-radius: 11px;
+
+        h3 {
+            margin-top: -90px;
+            background-color: $primary;
+            padding-bottom: 40px;
+            display: table;
+            margin-left: 21%;
+        }
+    }
+
+    a {
+        color: #cccccc;
+        font-size: 18px;
+
+        &:hover {
+            color: $white;
+            font-weight: 600;
+        }
+    }
+}
+
+.contact-form {
+    padding: 60px 0px;
+
+    .form {
+        padding-top: 30px;
+
+        .MuiFormControlLabel-root {
+            align-items: flex-start;
+
+            .MuiButtonBase-root {
+                margin-top: -6px;
+            }
+        }
+    }
+}

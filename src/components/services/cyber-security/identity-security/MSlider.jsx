@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 export default function MSlider() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     loop: true,
     fade: true,
