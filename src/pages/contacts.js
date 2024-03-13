@@ -9,7 +9,7 @@ export default function Contacts() {
     <>
       <ContactSlider />
       <Container>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           <Grid item md={6}>
             <ContactForm />
           </Grid>

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Typography,
@@ -5,10 +6,19 @@ import {
   Checkbox,
   FormControlLabel,
   Button,
+  InputLabel,
+  MenuItem,
+  FormControl,
+  Select,
 } from "@mui/material";
-import React from "react";
 
 export default function ContactForm() {
+  const [region, setRegion] = React.useState("");
+
+  const handleChange = (event) => {
+    setRegion(event.target.value);
+  };
+
   return (
     <Box className="contact-form">
       <Typography
@@ -56,12 +66,23 @@ export default function ContactForm() {
             variant="outlined"
             fullWidth
           />
-          <TextField
-            id="outlined-basic"
-            label="Please select the region *"
-            variant="outlined"
-            fullWidth
-          />
+          <FormControl fullWidth>
+            <InputLabel id="select-region">
+              Please select the region *
+            </InputLabel>
+            <Select
+              labelId="select-region"
+              id="select-region-select"
+              value={region}
+              label="Please select the region *"
+              onChange={handleChange}
+            >
+              <MenuItem value={1}>Europe, Middle-East and Africa</MenuItem>
+              <MenuItem value={2}>Asia-Pacific</MenuItem>
+              <MenuItem value={3}>United Kingdom and Ireland</MenuItem>
+              <MenuItem value={4}>United States of America</MenuItem>
+            </Select>
+          </FormControl>
         </Box>
         <Box mb={4}>
           <TextField
@@ -84,7 +105,7 @@ export default function ContactForm() {
         <Box mb={3}>
           <FormControlLabel
             control={<Checkbox defaultChecked />}
-            label="I would like to receive emails about your latest news, products & services. By ticking this box I consent to receive communications from Redapicorp in accordance with its Privacy Policy. I understand I may unsubscribe at any time."
+            label="I would like to receive emails about your latest news, products & services. By ticking this box I consent to receive communications from REDAPi in accordance with its Privacy Policy. I understand I may unsubscribe at any time."
           />
         </Box>
         <Button variant="contained" color="primary" size="large" fullWidth>
