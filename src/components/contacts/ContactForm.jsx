@@ -10,7 +10,11 @@ import {
   MenuItem,
   FormControl,
   Select,
+  CircularProgress,
 } from "@mui/material";
+import axios from "axios";
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/src/sweetalert2.scss";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -19,10 +23,12 @@ export default function ContactForm() {
     companyName: "",
     email: "",
     phone: "",
+    region: "",
     country: "",
     message: "",
-    region: "",
   });
+
+  const [loading, setLoading] = useState(false);
 
   const [countryOptions, setCountryOptions] = useState([]);
 
@@ -67,9 +73,45 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (event) => {
+  const isFormValid = () => {
+    return (
+      formData.firstName.trim() !== "" &&
+      formData.lastName.trim() !== "" &&
+      formData.companyName.trim() !== "" &&
+      formData.email.trim() !== "" &&
+      formData.phone.trim() !== "" &&
+      formData.region.trim() !== "" &&
+      formData.country.trim() !== "" &&
+      formData.message.trim() !== ""
+    );
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formData);
+    setLoading(true);
+    try {
+      await axios.post("/api/sendemail", formData);
+      Swal.fire({
+        title: "Welcome to REDAPi",
+        text: "Thank you for contacting us! We will get back to you shortly.",
+        icon: "success",
+      });
+      // Clear form fields after successful submission
+      setFormData({
+        firstName: "",
+        lastName: "",
+        companyName: "",
+        email: "",
+        phone: "",
+        region: "",
+        country: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -213,8 +255,12 @@ export default function ContactForm() {
           color="primary"
           size="large"
           fullWidth
+          disabled={!isFormValid()}
         >
           Submit
+          {loading && (
+            <CircularProgress color="inherit" size={18} sx={{ ml: 1 }} />
+          )}
         </Button>
       </Box>
     </Box>

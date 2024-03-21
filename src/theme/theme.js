@@ -59,6 +59,10 @@ const theme = createTheme({
         root: {
           borderRadius: 20,
         },
+        sizeLarge: {
+          padding: "12px 24px",
+          borderRadius: 30,
+        },
       },
     },
   },
