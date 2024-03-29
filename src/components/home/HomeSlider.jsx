@@ -22,6 +22,14 @@ export default function HomeSlider() {
     autoplay: true,
     // pauseOnHover: true,
     pauseOnDotsHover: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          adaptiveHeight: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -46,8 +54,8 @@ export default function HomeSlider() {
                       </Button>
                     </Box>
                   </Box>
-                  <Box>
-                    <Image src={slider1} width={500} alt="slider1" />
+                  <Box className="home-slider-img">
+                    <Image src={slider1} alt="slider1" />
                   </Box>
                 </Box>
               </Box>
@@ -70,8 +78,8 @@ export default function HomeSlider() {
                       </Button>
                     </Box>
                   </Box>
-                  <Box>
-                    <Image src={slider2} width={500} alt="" />
+                  <Box className="home-slider-img">
+                    <Image src={slider2} alt="" />
                   </Box>
                 </Box>
               </Box>
@@ -93,8 +101,8 @@ export default function HomeSlider() {
                       </Button>
                     </Box>
                   </Box>
-                  <Box>
-                    <Image src={slider3} width={500} alt="" />
+                  <Box className="home-slider-img">
+                    <Image src={slider3} alt="" />
                   </Box>
                 </Box>
               </Box>
@@ -115,8 +123,8 @@ export default function HomeSlider() {
                       </Button>
                     </Box>
                   </Box>
-                  <Box>
-                    <Image src={slider4} width={500} alt="" />
+                  <Box className="home-slider-img">
+                    <Image src={slider4} alt="" />
                   </Box>
                 </Box>
               </Box>
@@ -138,8 +146,8 @@ export default function HomeSlider() {
                       </Button>
                     </Box>
                   </Box>
-                  <Box>
-                    <Image src={slider5} width={500} alt="" />
+                  <Box className="home-slider-img">
+                    <Image src={slider5} alt="" />
                   </Box>
                 </Box>
               </Box>
@@ -161,8 +169,8 @@ export default function HomeSlider() {
                       </Button>
                     </Box>
                   </Box>
-                  <Box>
-                    <Image src={slider6} width={500} alt="" />
+                  <Box className="home-slider-img">
+                    <Image src={slider6} alt="" />
                   </Box>
                 </Box>
               </Box>

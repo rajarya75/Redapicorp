@@ -4,6 +4,34 @@
     .slick-dots {
         bottom: -50px;
     }
+
+    .home-slider-img {
+        img {
+            width: 500px;
+            height: auto;
+        }
+    }
+
+    @media(max-width: 768px) {
+        margin-bottom: 30px;
+
+        .flex-between {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+
+            .home-slider-img {
+                margin-left: auto;
+                margin-right: auto;
+
+                img {
+                    width: 300px;
+                    height: auto;
+                    object-fit: cover;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }
 
 .unique_slider {
@@ -13,6 +41,17 @@
     .slick-arrow {
         &::before {
             color: $primary;
+        }
+
+    }
+
+    @media(max-width: 768px) {
+        .slick-next {
+            right: 0;
+        }
+
+        .slick-prev {
+            left: 0;
         }
     }
 

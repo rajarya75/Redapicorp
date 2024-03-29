@@ -33,6 +33,16 @@ export default function UniqueSlider() {
         sx={{ fill: "#8a1111", width: "34px", height: "34px" }}
       />
     ),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
 
   return (
