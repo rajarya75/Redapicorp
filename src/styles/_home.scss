@@ -26,6 +26,14 @@
             border-radius: 50%;
             background: $primary;
             margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 225px;
+                height: auto;
+            }
         }
     }
 }
