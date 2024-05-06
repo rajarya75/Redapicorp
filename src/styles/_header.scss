@@ -68,3 +68,19 @@ button {
         top: -7px;
     }
 }
+
+.desktop-header {
+    a.logo {
+        line-height: 0;
+
+        img {
+            width: 120px;
+            height: auto;
+            margin: 3px;
+
+            @media(max-width: 768px) {
+                width: 80px;
+            }
+        }
+    }
+}

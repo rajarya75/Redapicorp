@@ -9,6 +9,7 @@ import Container from "@mui/material/Container";
 import logo from "@/../public/images/core/logo.png";
 import Image from "next/image";
 import Navbar from "./header/Navbar";
+import Link from "next/link";
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -33,7 +34,9 @@ export default function Header() {
             }}
             className="desktop-header"
           >
-            <Image src={logo} alt="" />
+            <Link className="logo" href={"/"}>
+              <Image src={logo} alt="" />
+            </Link>
             <Box sx={{ display: { md: "initial", xs: "none" } }}>
               <Navbar />
             </Box>
