@@ -1,5 +1,11 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
+import strategy1 from "@/../../public/images/about/strategy1.png";
+import strategy2 from "@/../../public/images/about/strategy2.png";
+import strategy3 from "@/../../public/images/about/strategy3.png";
+import strategy4 from "@/../../public/images/about/strategy4.png";
+import strategy5 from "@/../../public/images/about/strategy5.png";
 
 export default function OurStrategy() {
   return (
@@ -19,13 +25,17 @@ export default function OurStrategy() {
           </Grid>
           <Grid item md={4} xs={6}>
             <Box className="strategy-item">
-              <Box className="icon">ddd</Box>
+              <Box className="icon">
+                <Image src={strategy1} alt="" width={160} />
+              </Box>
               <Typography variant="body2">Untether the People Power</Typography>
             </Box>
           </Grid>
           <Grid item md={4} xs={6}>
             <Box className="strategy-item">
-              <Box className="icon">ddd</Box>
+              <Box className="icon">
+                <Image src={strategy2} alt="" width={240} />
+              </Box>
               <Typography variant="body2">
                 Innovation & Transformation
               </Typography>
@@ -33,7 +43,9 @@ export default function OurStrategy() {
           </Grid>
           <Grid item md={4} xs={6}>
             <Box className="strategy-item">
-              <Box className="icon">ddd</Box>
+              <Box className="icon">
+                <Image src={strategy3} alt="" width={230} />
+              </Box>
               <Typography variant="body2">
                 Applaud Operational Excellence
               </Typography>
@@ -46,7 +58,9 @@ export default function OurStrategy() {
           ></Grid>
           <Grid item md={4} xs={6}>
             <Box className="strategy-item">
-              <Box className="icon">ddd</Box>
+              <Box className="icon">
+                <Image src={strategy4} alt="" width={100} />
+              </Box>
               <Typography variant="body2">
                 Think Wide, Go Beyond Digitalization
               </Typography>
@@ -54,7 +68,9 @@ export default function OurStrategy() {
           </Grid>
           <Grid item md={4} xs={6}>
             <Box className="strategy-item">
-              <Box className="icon">ddd</Box>
+              <Box className="icon">
+                <Image src={strategy5} alt="" width={245} />
+              </Box>
               <Typography variant="body2">
                 Building a bond with Customers
               </Typography>

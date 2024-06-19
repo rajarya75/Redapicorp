@@ -16,11 +16,15 @@ export default function VisionMission() {
               comes to technical delivery and service excellence.
             </Typography>
           </Grid>
-          <Grid item md={6} xs={12}></Grid>
+          <Grid item md={6} xs={12}>
+            <Box className="vision-bg"></Box>
+          </Grid>
         </Grid>
 
         <Grid container spacing={2} mt={0}>
-          <Grid item md={6} xs={12}></Grid>
+          <Grid item md={6} xs={12}>
+            <Box className="mision-bg"></Box>
+          </Grid>
           <Grid item md={6} xs={12} className="mission">
             <Typography variant="h2" pb={3} className="animated-heading light">
               Mission
