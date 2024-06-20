@@ -26,6 +26,9 @@ export default function OurPilots() {
               the customers makes us the world&apos;s best customer peers.
             </Typography>
           </Grid>
+          <Grid item md={6}>
+            <Box className="pilots-bg"></Box>
+          </Grid>
         </Grid>
       </Container>
     </Box>

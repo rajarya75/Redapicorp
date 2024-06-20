@@ -20,13 +20,24 @@
 }
 
 .our-pilots {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 60px;
     background-color: $primary;
     color: $white;
+    border-radius: 0 201px;
 
     .MuiTypography-body2 {
         text-align: justify;
+    }
+
+    .pilots-bg {
+        background-image: url(../../public/images/about/pilots.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 415px;
+        margin-left: 115px;
+        margin-top: -70px;
     }
 }
 
@@ -94,17 +105,21 @@ a {
     .vision {
         background-color: $primary;
         color: $white;
-        padding: 120px 60px 100px 200px;
+        padding: 120px 100px 100px 180px;
         height: 400px;
         text-align: justify;
+        border-radius: 0 201px;
+        box-shadow: 3px 10px 20px #8a11117d;
     }
 
     .mission {
         background-color: $primary;
         color: $white;
-        padding: 70px 200px 100px 60px;
+        padding: 70px 170px 100px 80px;
         height: 400px;
         text-align: justify;
+        border-radius: 0 201px;
+        box-shadow: -3px -7px 20px #8a11117d;
     }
 
     .vision-bg {
