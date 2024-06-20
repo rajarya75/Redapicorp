@@ -14,7 +14,7 @@ export default function OurStrategy() {
         <Grid container spacing={2}>
           <Grid item md={12} className="text-center">
             <Typography variant="h2" pb={3} className="animated-heading">
-              Our Startegy
+              Our Strategy
             </Typography>
             <Typography variant="body2">
               To achieve smooth and continuous growth we have five value-added
