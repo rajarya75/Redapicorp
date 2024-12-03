@@ -6,10 +6,12 @@
 @import 'about.scss';
 @import 'services.scss';
 @import 'contacts.scss';
+@import 'care.scss';
 
 .main-wrapper {
     max-width: 1920px;
     margin: 0 auto;
+    overflow-x: hidden;
 
     main {
         margin-top: 64px;

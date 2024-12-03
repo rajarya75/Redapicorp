@@ -51,6 +51,7 @@ export const PageItems = [
   },
   { name: "Insights", path: "/insights" },
   { name: "Careers", path: "careers" },
+  { name: "REDAPi Care", path: "redapicare" },
   { name: "Contact Us", path: "/contacts" },
   { name: "Press Release", path: "/press-release" },
 ];

@@ -5,7 +5,7 @@ import { red } from "@mui/material/colors";
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
-  display: "swap",
+  // display: "swap",
 });
 
 // Create a theme instance.
