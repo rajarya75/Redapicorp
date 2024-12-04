@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import cloud from "@/../../public/images/care/cloud.png";
 import arrow from "@/../../public/images/care/arrow.png";
+import art1 from "@/../../public/images/about/strategy1.png";
 import art2 from "@/../../public/images/about/strategy2.png";
 import art3 from "@/../../public/images/about/strategy3.png";
 import art4 from "@/../../public/images/about/strategy4.png";
@@ -11,20 +12,27 @@ export default function Valuable() {
   const [hoveredItem, setHoveredItem] = useState(0);
 
   const items = [
+    { image: art1, caption: "Evaluation" },
     { image: art2, caption: "Perks" },
     { image: art3, caption: "Holidays" },
     { image: art4, caption: "Training" },
   ];
 
   const items1 = [
+    { image: art1, caption: "Be a Happy soul-learning Yog" },
     { image: art2, caption: 'Balance "gut" and "mind"' },
     { image: art3, caption: 'Be a "believer"' },
     { image: art4, caption: "It's never too late." },
   ];
 
+  <Typography variant="h5">
+    Be a Happy soul- <br />
+    learning <b>Yog</b>
+  </Typography>;
+
   return (
     <>
-      <Box className="valuable">
+      <Box className="valuable top">
         <Container>
           <Grid container spacing={2}>
             {/* Left Section */}
@@ -33,11 +41,7 @@ export default function Valuable() {
                 <Image className="arrow" src={arrow} alt="Arrow Icon" />
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
                 <Typography variant="h2">
-                  We Are <br /> <span>Tougher</span>
-                  <br />
-                  To Make You
-                  <br />
-                  <span>Valuable</span>
+                  We Are Tougher To <br /> Make You Valuable
                 </Typography>
               </Box>
             </Grid>
@@ -49,7 +53,7 @@ export default function Valuable() {
                 <Box
                   className="hover-content"
                   position="relative"
-                  height="280px"
+                  height="250px"
                 >
                   <Box>
                     {items.map((item, index) => (
@@ -74,16 +78,15 @@ export default function Valuable() {
 
                 {/* Hover Items (Typography) */}
                 <Box className="hover-item" mt={2}>
-                  <Typography variant="h5">Evaluation</Typography>
                   {items.map((item, index) => (
                     <Typography
                       key={index}
-                      variant="subtitle1"
+                      variant="h5"
                       onMouseEnter={() => setHoveredItem(index)} // Set hovered item on mouse enter
                       onMouseLeave={() => setHoveredItem(0)} // Reset to default image on mouse leave
                       style={{
                         cursor: "pointer",
-                        marginTop: "12px", // Add spacing between captions
+                        marginTop: "16px", // Add spacing between captions
                       }}
                     >
                       {item.caption}
@@ -96,7 +99,7 @@ export default function Valuable() {
         </Container>
       </Box>
 
-      <Box className="valuable">
+      <Box className="valuable bottom">
         <Container>
           <Grid container spacing={2}>
             {/* Left Section */}
@@ -104,14 +107,7 @@ export default function Valuable() {
               <Box className="val-left val-left-1">
                 <Image className="arrow" src={arrow} alt="Arrow Icon" />
 
-                <Typography variant="h2">
-                  <span>Happy</span>
-                  <br /> <span style={{ fontSize: "inherit" }}>To</span>
-                  <br />
-                  <span> Heal</span>
-                  <br />
-                  <span>You</span>
-                </Typography>
+                <Typography variant="h2">Happy to Heal You</Typography>
 
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
               </Box>
@@ -125,7 +121,7 @@ export default function Valuable() {
                 <Box
                   className="hover-content"
                   position="relative"
-                  height="280px"
+                  height="250px"
                 >
                   <Box>
                     {items1.map((item, index) => (
@@ -150,19 +146,15 @@ export default function Valuable() {
 
                 {/* Hover Items (Typography) */}
                 <Box className="hover-item" mt={2}>
-                  <Typography variant="h5">
-                    Be a Happy soul- <br />
-                    learning <b>Yog</b>
-                  </Typography>
                   {items1.map((item, index) => (
                     <Typography
                       key={index}
-                      variant="subtitle1"
+                      variant="h5"
                       onMouseEnter={() => setHoveredItem(index)} // Set hovered item on mouse enter
                       onMouseLeave={() => setHoveredItem(0)} // Reset to default image on mouse leave
                       style={{
                         cursor: "pointer",
-                        marginTop: "12px", // Add spacing between captions
+                        marginTop: "16px", // Add spacing between captions
                       }}
                     >
                       {item.caption}

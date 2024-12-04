@@ -9,7 +9,6 @@ export default function CareSlider() {
   var settings = {
     dots: true,
     infinite: true,
-    loop: true,
     fade: true,
     arrows: false,
     speed: 1000,
@@ -22,6 +21,7 @@ export default function CareSlider() {
 
   return (
     <Box className="slider care-bg">
+      <div className="wave-background"></div>
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -30,13 +30,12 @@ export default function CareSlider() {
                 <Box className="flex-between">
                   <Box>
                     <Typography
-                      variant="h1"
+                      variant="h2"
                       pb={3}
-                      component={"h1"}
+                      component={"h2"}
                       className="animated-heading"
                     >
-                      Joining to
-                      <br /> <span>Relieving</span>
+                      Joining to Relieving
                     </Typography>
                     <Typography variant="body2">
                       Tough observations, Smooth joining, Making work-life{" "}
@@ -58,18 +57,17 @@ export default function CareSlider() {
                 <Box className="flex-between">
                   <Box>
                     <Typography
-                      variant="h1"
+                      variant="h2"
                       pb={3}
-                      component={"h1"}
+                      component={"h2"}
                       className="animated-heading"
                     >
-                      Achieving <br />
-                      <span>Mindfulness</span>
+                      Achieving Mindfulness
                     </Typography>
                     <Typography variant="body2">
                       Globally it is believed that if you are a happy soul, you
                       <br />
-                      are completey successful and satisfied. Let`&apos;`s begin
+                      are completely successful and satisfied. Let&apos;s begin
                       <br />
                       this journey together with REDAPi Care to absorb its
                       <br />

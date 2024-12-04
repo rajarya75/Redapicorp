@@ -1,77 +1,72 @@
 .care-page {
     .care-bg {
-        background-image: url(../../public/images/care/background.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 900px;
-
-        h1 {
-            font-size: 80px;
-            font-weight: bold;
-            color: $white;
-            padding-top: 60px;
-
-            span {
-                padding-left: 80px;
-            }
-        }
-
-        p {
-            padding-left: 80px;
-            color: $white;
-        }
+        position: relative;
+        overflow: hidden;
+        padding-top: 100px;
+        height: 680px;
     }
 
+
+    .wave-background {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(to top, #8a1111, #ffffff);
+        clip-path: path("M0 100 C200 0 400 200 600 100 C800 0 1034 298 1529 23 L1556 451 L0 400 Z");
+        z-index: -1;
+    }
+
+
+
     .valuable {
-        padding-bottom: 350px;
+        &.top {
+            padding-bottom: 250px;
+        }
+
+        &.bottom {
+            padding-bottom: 150px;
+        }
 
         .val-left {
             position: relative;
 
             .arrow {
                 position: absolute;
-                left: -100px;
-                top: -220px;
+                left: -120px;
+                top: -35px;
             }
 
             .cloud {
                 margin-left: 120px;
-                margin-top: -80px;
+                margin-top: 100px;
+                max-width: 300px;
+                height: auto;
+                opacity: .3;
             }
 
             h2 {
                 color: $primary;
                 text-transform: uppercase;
 
-                span {
-                    font-size: 70px;
-                    padding-left: 80px;
-                    font-weight: bold;
-                }
             }
 
             &.val-left-1 {
                 .arrow {
-                    top: -400px;
+                    top: -320px;
                 }
 
                 .cloud {
                     margin-left: -260px;
-                    margin-bottom: -250px;
+                    margin-bottom: -350px;
                     margin-top: unset;
                 }
 
                 h2 {
-                    span {
-                        &:first-child {
-                            padding-left: 0;
-                        }
-
-                        &:last-child {
-                            font-size: inherit;
-                        }
-                    }
+                    padding-top: 100px;
                 }
+
             }
         }
 
@@ -87,15 +82,12 @@
                 h5 {
                     font-weight: 500;
                     color: $primary;
-                }
-
-                h6 {
-                    color: $primary;
 
                     &:hover {
                         font-weight: bold;
                     }
                 }
+
             }
 
             &.val-right-1 {
@@ -104,8 +96,11 @@
 
                 .right-cloud {
                     position: absolute;
-                    right: -78%;
-                    top: -60%;
+                    right: -60%;
+                    top: -50%;
+                    opacity: .3;
+                    max-width: 300px;
+                    height: auto;
                 }
             }
         }
