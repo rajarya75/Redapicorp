@@ -21,7 +21,7 @@ export default function CareSlider() {
 
   return (
     <Box className="slider care-bg">
-      <div className="wave-background"></div>
+      {/* <div className="wave-background"></div> */}
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12}>
