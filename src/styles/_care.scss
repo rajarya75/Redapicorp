@@ -3,10 +3,10 @@
         position: relative;
         overflow: hidden;
         padding-top: 100px;
-        height: 730px;
+        height: calc(100vh - 60px);
         background-image: url(../../public/images/care/background.png);
-        background-size: cover;
-        background-position: center -170px;
+        background-size: contain;
+        background-position: center bottom;
     }
 
 
@@ -25,7 +25,8 @@
 
     .valuable {
         &.top {
-            padding-bottom: 300px;
+            padding-bottom: 350px;
+            padding-top: 50px;
         }
 
         &.bottom {
