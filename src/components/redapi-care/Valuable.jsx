@@ -3,8 +3,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import cloud from "@/../../public/images/care/cloud.png";
 import arrow from "@/../../public/images/care/arrow.png";
-import art1 from "@/../../public/images/about/strategy1.png";
-import art2 from "@/../../public/images/about/strategy2.png";
+import value1 from "@/../../public/images/care/value.png";
+import happy1 from "@/../../public/images/care/happy.png";
 import art3 from "@/../../public/images/about/strategy3.png";
 import art4 from "@/../../public/images/about/strategy4.png";
 
@@ -12,15 +12,15 @@ export default function Valuable() {
   const [hoveredItem, setHoveredItem] = useState(0);
 
   const items = [
-    { image: art1, caption: "Evaluation" },
-    { image: art2, caption: "Perks" },
+    { image: value1, caption: "Evaluation" },
+    { image: art4, caption: "Perks" },
     { image: art3, caption: "Holidays" },
     { image: art4, caption: "Training" },
   ];
 
   const items1 = [
-    { image: art1, caption: "Be a Happy soul-learning Yog" },
-    { image: art2, caption: 'Balance "gut" and "mind"' },
+    { image: happy1, caption: "Be a Happy soul-learning Yog" },
+    { image: art4, caption: 'Balance "gut" and "mind"' },
     { image: art3, caption: 'Be a "believer"' },
     { image: art4, caption: "It's never too late." },
   ];
@@ -53,7 +53,7 @@ export default function Valuable() {
                 <Box
                   className="hover-content"
                   position="relative"
-                  height="250px"
+                  height="300px"
                 >
                   <Box>
                     {items.map((item, index) => (
@@ -67,6 +67,7 @@ export default function Valuable() {
                           left: 0,
                           width: "100%",
                           height: "100%",
+                          objectFit: "cover",
                           opacity: hoveredItem === index ? 1 : 0, // Control visibility
                           zIndex: hoveredItem === index ? 1 : 0, // Ensure proper stacking
                           transition: "opacity 0.5s ease", // Smooth hide/show effect
@@ -121,7 +122,7 @@ export default function Valuable() {
                 <Box
                   className="hover-content"
                   position="relative"
-                  height="250px"
+                  height="300px"
                 >
                   <Box>
                     {items1.map((item, index) => (
