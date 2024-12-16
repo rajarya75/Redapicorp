@@ -54,6 +54,10 @@ export default function Valuable() {
                   className="hover-content"
                   position="relative"
                   height="300px"
+                  sx={{
+                    boxShadow:
+                      "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+                  }}
                 >
                   <Box>
                     {items.map((item, index) => (
@@ -123,6 +127,10 @@ export default function Valuable() {
                   className="hover-content"
                   position="relative"
                   height="300px"
+                  sx={{
+                    boxShadow:
+                      "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+                  }}
                 >
                   <Box>
                     {items1.map((item, index) => (
