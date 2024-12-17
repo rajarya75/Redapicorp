@@ -53,11 +53,8 @@ export default function Valuable() {
                 <Box
                   className="hover-content"
                   position="relative"
-                  height="300px"
-                  sx={{
-                    boxShadow:
-                      "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
-                  }}
+                  height="370px"
+                  width="370px"
                 >
                   <Box>
                     {items.map((item, index) => (
@@ -126,11 +123,8 @@ export default function Valuable() {
                 <Box
                   className="hover-content"
                   position="relative"
-                  height="300px"
-                  sx={{
-                    boxShadow:
-                      "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
-                  }}
+                  height="370px"
+                  width="370px"
                 >
                   <Box>
                     {items1.map((item, index) => (
@@ -144,6 +138,7 @@ export default function Valuable() {
                           left: 0,
                           width: "100%",
                           height: "100%",
+                          objectFit: "cover",
                           opacity: hoveredItem === index ? 1 : 0, // Control visibility
                           zIndex: hoveredItem === index ? 1 : 0, // Ensure proper stacking
                           transition: "opacity 0.5s ease", // Smooth hide/show effect
