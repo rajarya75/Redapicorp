@@ -40,8 +40,10 @@ export default function Valuable() {
               <Box className="val-left">
                 <Image className="arrow" src={arrow} alt="Arrow Icon" />
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
-                <Typography variant="h2">
-                  We Are Tougher To <br /> Make You Valuable
+                <Typography variant="h2" className="style1">
+                  We Are <br />
+                  <span>Tougher</span> <br /> To Make You <br />{" "}
+                  <span>Valuable</span>
                 </Typography>
               </Box>
             </Grid>
@@ -109,7 +111,16 @@ export default function Valuable() {
               <Box className="val-left val-left-1">
                 <Image className="arrow" src={arrow} alt="Arrow Icon" />
 
-                <Typography variant="h2">Happy to Heal You</Typography>
+                <Box className="padding-h2">
+                  <Typography variant="h2" className="style2">
+                    <span>Happy</span> <br />
+                    <div className="extra-padding">
+                      to <br />
+                      <span>Heal</span> <br />
+                      You
+                    </div>
+                  </Typography>
+                </Box>
 
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
               </Box>
