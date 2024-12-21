@@ -25,12 +25,12 @@
 
     .valuable {
         &.top {
-            padding-bottom: 350px;
+            padding-bottom: 240px;
             padding-top: 50px;
         }
 
         &.bottom {
-            padding-bottom: 150px;
+            padding-bottom: 200px;
         }
 
         .val-left {
@@ -47,28 +47,56 @@
                 margin-top: 100px;
                 max-width: 300px;
                 height: auto;
-                opacity: .3;
+                opacity: .2;
             }
 
             h2 {
                 color: $primary;
                 text-transform: uppercase;
+                position: relative;
 
+                &.style1 {
+                    span {
+                        font-size: 74px;
+                        padding-left: 90px;
+                    }
+                }
+
+                &.style2 {
+                    span {
+                        font-size: 74px;
+                    }
+
+                    .extra-padding {
+                        padding-left: 90px;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 10px;
+                    height: 80px;
+                    border-radius: 5px;
+                    background: $primary;
+                    position: absolute;
+                    left: -40px;
+                    top: -80px;
+                }
             }
 
             &.val-left-1 {
                 .arrow {
-                    top: -320px;
+                    top: -140px;
                 }
 
                 .cloud {
-                    margin-left: -260px;
-                    margin-bottom: -350px;
-                    margin-top: unset;
+                    position: absolute;
+                    left: -44%;
+                    bottom: -39%;
                 }
 
-                h2 {
-                    padding-top: 100px;
+                .padding-h2 {
+                    padding-top: 270px;
                 }
 
             }
@@ -76,11 +104,6 @@
 
         .val-right {
             padding-top: 130px;
-
-            // .hover-content {
-            //     background: #f1f1f1;
-
-            // }
 
             .hover-item {
                 h5 {
