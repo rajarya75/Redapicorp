@@ -26,7 +26,7 @@ export default function CareSlider() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Slider {...settings}>
-              <Box>
+              <Box data-aos="fade-up" data-aos-duration="3000">
                 <Box className="flex-between">
                   <Box>
                     <Typography

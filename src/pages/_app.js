@@ -7,9 +7,23 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "@/theme/theme";
 import "../styles/main.scss";
 import Layout from "./layout";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Easing function
+      once: false, // Ensures animation repeats every time the element enters the viewport
+      mirror: true, // Ensures animation occurs when scrolling up as well
+    });
+
+    AOS.refresh(); // Refresh AOS on load or content updates
+  }, []);
 
   return (
     <AppCacheProvider {...props}>

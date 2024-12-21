@@ -38,9 +38,20 @@ export default function Valuable() {
             {/* Left Section */}
             <Grid item md={8}>
               <Box className="val-left">
-                <Image className="arrow" src={arrow} alt="Arrow Icon" />
+                <Image
+                  className="arrow"
+                  src={arrow}
+                  alt="Arrow Icon"
+                  data-aos="fade-down-right"
+                  data-aos-duration="3000"
+                />
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
-                <Typography variant="h2" className="style1">
+                <Typography
+                  variant="h2"
+                  className="style1"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   We Are <br />
                   <span>Tougher</span> <br /> To Make You <br />{" "}
                   <span>Valuable</span>
@@ -50,7 +61,11 @@ export default function Valuable() {
 
             {/* Right Section */}
             <Grid item md={4}>
-              <Box className="val-right">
+              <Box
+                className="val-right"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 {/* Hover Content (Images) */}
                 <Box
                   className="hover-content"
@@ -109,10 +124,21 @@ export default function Valuable() {
             {/* Left Section */}
             <Grid item md={8}>
               <Box className="val-left val-left-1">
-                <Image className="arrow" src={arrow} alt="Arrow Icon" />
+                <Image
+                  className="arrow"
+                  src={arrow}
+                  alt="Arrow Icon"
+                  data-aos="fade-down-right"
+                  data-aos-duration="3000"
+                />
 
                 <Box className="padding-h2">
-                  <Typography variant="h2" className="style2">
+                  <Typography
+                    variant="h2"
+                    className="style2"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                  >
                     <span>Happy</span> <br />
                     <div className="extra-padding">
                       to <br />
@@ -128,7 +154,11 @@ export default function Valuable() {
 
             {/* Right Section */}
             <Grid item md={4}>
-              <Box className="val-right val-right-1">
+              <Box
+                className="val-right val-right-1"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 {/* Hover Content (Images) */}
                 <Image className="right-cloud" src={cloud} alt="" />
                 <Box
