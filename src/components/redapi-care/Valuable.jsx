@@ -46,12 +46,7 @@ export default function Valuable() {
                   data-aos-duration="3000"
                 />
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
-                <Typography
-                  variant="h2"
-                  className="style1"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                >
+                <Typography variant="h2" className="style1">
                   We Are <br />
                   <span>Tougher</span> <br /> To Make You <br />{" "}
                   <span>Valuable</span>
@@ -61,11 +56,7 @@ export default function Valuable() {
 
             {/* Right Section */}
             <Grid item md={4}>
-              <Box
-                className="val-right"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
+              <Box className="val-right">
                 {/* Hover Content (Images) */}
                 <Box
                   className="hover-content"
@@ -133,12 +124,7 @@ export default function Valuable() {
                 />
 
                 <Box className="padding-h2">
-                  <Typography
-                    variant="h2"
-                    className="style2"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                  >
+                  <Typography variant="h2" className="style2">
                     <span>Happy</span> <br />
                     <div className="extra-padding">
                       to <br />
@@ -154,11 +140,7 @@ export default function Valuable() {
 
             {/* Right Section */}
             <Grid item md={4}>
-              <Box
-                className="val-right val-right-1"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
+              <Box className="val-right val-right-1">
                 {/* Hover Content (Images) */}
                 <Image className="right-cloud" src={cloud} alt="" />
                 <Box
