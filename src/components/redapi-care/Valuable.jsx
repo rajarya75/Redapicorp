@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import cloud from "@/../../public/images/care/cloud.png";
-import arrow from "@/../../public/images/care/arrow.png";
+import arrow from "@/../../public/images/care/arrow.gif";
 import value1 from "@/../../public/images/care/value.png";
 import happy1 from "@/../../public/images/care/happy.png";
 import art3 from "@/../../public/images/about/strategy3.png";
@@ -42,8 +42,8 @@ export default function Valuable() {
                   className="arrow"
                   src={arrow}
                   alt="Arrow Icon"
-                  data-aos="fade-down-right"
-                  data-aos-duration="3000"
+                  // data-aos="fade-down-right"
+                  // data-aos-duration="3000"
                 />
                 <Image className="cloud" src={cloud} alt="Cloud Icon" />
                 <Typography variant="h2" className="style1">
@@ -119,8 +119,8 @@ export default function Valuable() {
                   className="arrow"
                   src={arrow}
                   alt="Arrow Icon"
-                  data-aos="fade-down-right"
-                  data-aos-duration="3000"
+                  // data-aos="fade-down-right"
+                  // data-aos-duration="3000"
                 />
 
                 <Box className="padding-h2">
