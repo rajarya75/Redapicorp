@@ -10,6 +10,7 @@ import art4 from "@/../../public/images/about/strategy4.png";
 
 export default function Valuable() {
   const [hoveredItem, setHoveredItem] = useState(0);
+  const [hoveredItem1, setHoveredItem1] = useState(0);
 
   const items = [
     { image: value1, caption: "Evaluation" },
@@ -164,8 +165,8 @@ export default function Valuable() {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          opacity: hoveredItem === index ? 1 : 0, // Control visibility
-                          zIndex: hoveredItem === index ? 1 : 0, // Ensure proper stacking
+                          opacity: hoveredItem1 === index ? 1 : 0, // Control visibility
+                          zIndex: hoveredItem1 === index ? 1 : 0, // Ensure proper stacking
                           transition: "opacity .7s ease", // Smooth hide/show effect
                         }}
                       />
@@ -179,8 +180,8 @@ export default function Valuable() {
                     <Typography
                       key={index}
                       variant="h5"
-                      onMouseEnter={() => setHoveredItem(index)} // Set hovered item on mouse enter
-                      onMouseLeave={() => setHoveredItem(0)} // Reset to default image on mouse leave
+                      onMouseEnter={() => setHoveredItem1(index)} // Set hovered item on mouse enter
+                      onMouseLeave={() => setHoveredItem1(0)} // Reset to default image on mouse leave
                       style={{
                         cursor: "pointer",
                         paddingTop: "10px",
