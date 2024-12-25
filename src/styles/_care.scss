@@ -110,7 +110,8 @@
                     font-weight: 500;
                     color: $primary;
 
-                    &:hover {
+                    &:hover,
+                    &.active {
                         font-weight: bold;
                     }
                 }
