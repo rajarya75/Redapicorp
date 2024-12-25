@@ -79,7 +79,7 @@ export default function Valuable() {
                           objectFit: "cover",
                           opacity: hoveredItem === index ? 1 : 0, // Control visibility
                           zIndex: hoveredItem === index ? 1 : 0, // Ensure proper stacking
-                          transition: "opacity 0.5s ease", // Smooth hide/show effect
+                          transition: "opacity .7s ease", // Smooth hide/show effect
                         }}
                       />
                     ))}
@@ -96,8 +96,10 @@ export default function Valuable() {
                       onMouseLeave={() => setHoveredItem(0)} // Reset to default image on mouse leave
                       style={{
                         cursor: "pointer",
-                        marginTop: "16px", // Add spacing between captions
+                        paddingTop: "10px",
+                        paddingBottom: "10px",
                       }}
+                      className={item.image == value1 && "active"}
                     >
                       {item.caption}
                     </Typography>
@@ -164,7 +166,7 @@ export default function Valuable() {
                           objectFit: "cover",
                           opacity: hoveredItem === index ? 1 : 0, // Control visibility
                           zIndex: hoveredItem === index ? 1 : 0, // Ensure proper stacking
-                          transition: "opacity 0.5s ease", // Smooth hide/show effect
+                          transition: "opacity .7s ease", // Smooth hide/show effect
                         }}
                       />
                     ))}
@@ -181,8 +183,10 @@ export default function Valuable() {
                       onMouseLeave={() => setHoveredItem(0)} // Reset to default image on mouse leave
                       style={{
                         cursor: "pointer",
-                        marginTop: "16px", // Add spacing between captions
+                        paddingTop: "10px",
+                        paddingBottom: "10px",
                       }}
+                      className={item.image == happy1 && "active"}
                     >
                       {item.caption}
                     </Typography>
