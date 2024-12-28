@@ -81,6 +81,8 @@ export default function Valuable() {
                           opacity: hoveredItem === index ? 1 : 0, // Control visibility
                           zIndex: hoveredItem === index ? 1 : 0, // Ensure proper stacking
                           transition: "opacity .7s ease", // Smooth hide/show effect
+                          animation:
+                            "up-down 2s ease-in-out infinite alternate-reverse both",
                         }}
                       />
                     ))}
@@ -168,6 +170,8 @@ export default function Valuable() {
                           opacity: hoveredItem1 === index ? 1 : 0, // Control visibility
                           zIndex: hoveredItem1 === index ? 1 : 0, // Ensure proper stacking
                           transition: "opacity .7s ease", // Smooth hide/show effect
+                          animation:
+                            "up-down 2s ease-in-out infinite alternate-reverse both",
                         }}
                       />
                     ))}
