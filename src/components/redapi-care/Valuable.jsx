@@ -5,6 +5,7 @@ import cloud from "@/../../public/images/care/cloud.png";
 import arrow from "@/../../public/images/care/arrow.gif";
 import value1 from "@/../../public/images/care/value.png";
 import happy1 from "@/../../public/images/care/happy.png";
+import bg from "@/../../public/images/care/bg.png";
 import art3 from "@/../../public/images/about/strategy3.png";
 import art4 from "@/../../public/images/about/strategy4.png";
 
@@ -66,6 +67,7 @@ export default function Valuable() {
                   width="370px"
                 >
                   <Box>
+                    <Image className="bg" src={bg} alt="" />
                     {items.map((item, index) => (
                       <Image
                         key={index}
@@ -155,6 +157,7 @@ export default function Valuable() {
                   width="370px"
                 >
                   <Box>
+                    <Image className="bg1" src={bg} alt="" />
                     {items1.map((item, index) => (
                       <Image
                         key={index}
