@@ -5,6 +5,7 @@ import cloud from "@/../../public/images/care/cloud.png";
 import arrow from "@/../../public/images/care/arrow.gif";
 import value1 from "@/../../public/images/care/value.png";
 import value2 from "@/../../public/images/care/perks.png";
+import value3 from "@/../../public/images/care/holidays.png";
 import happy1 from "@/../../public/images/care/happy.png";
 import bg from "@/../../public/images/care/bg.png";
 import art3 from "@/../../public/images/about/strategy3.png";
@@ -17,7 +18,7 @@ export default function Valuable() {
   const items = [
     { image: value1, caption: "Evaluation" },
     { image: value2, caption: "Perks" },
-    { image: art3, caption: "Holidays" },
+    { image: value3, caption: "Holidays" },
     { image: art4, caption: "Training" },
   ];
 

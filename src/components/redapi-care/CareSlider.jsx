@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Typography, Container, Grid } from "@mui/material";
 import Slider from "react-slick";
 import Image from "next/image";
-import slider1 from "@/../../public/images/about/slider1.png";
 import slider2 from "@/../../public/images/about/slider2.png";
+import slider1 from "@/../../public/images/care/joining.png";
 
 export default function CareSlider() {
   var settings = {
