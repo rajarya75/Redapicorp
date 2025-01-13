@@ -7,6 +7,7 @@ import value1 from "@/../../public/images/care/value.png";
 import value2 from "@/../../public/images/care/perks.png";
 import value3 from "@/../../public/images/care/holiday.png";
 import happy1 from "@/../../public/images/care/happy.png";
+import balance from "@/../../public/images/care/balance.png";
 import bg from "@/../../public/images/care/bg.png";
 import art3 from "@/../../public/images/about/strategy3.png";
 import art4 from "@/../../public/images/about/strategy4.png";
@@ -24,7 +25,7 @@ export default function Valuable() {
 
   const items1 = [
     { image: happy1, caption: "Be a Happy soul-learning Yog" },
-    { image: art4, caption: 'Balance "gut" and "mind"' },
+    { image: balance, caption: 'Balance "gut" and "mind"' },
     { image: art3, caption: 'Be a "believer"' },
     { image: art4, caption: "It's never too late." },
   ];
