@@ -6,11 +6,12 @@ import arrow from "@/../../public/images/care/arrow.gif";
 import value1 from "@/../../public/images/care/value.png";
 import value2 from "@/../../public/images/care/perks.png";
 import value3 from "@/../../public/images/care/holiday.png";
+import value4 from "@/../../public/images/care/TRANING.png";
 import happy1 from "@/../../public/images/care/happy.png";
-import balance from "@/../../public/images/care/balance.png";
+import happy2 from "@/../../public/images/care/balance.png";
+import happy3 from "@/../../public/images/care/BE-A-BELIEVER.png";
+import happy4 from "@/../../public/images/care/ITS-NEVER-TOO-LATE.png";
 import bg from "@/../../public/images/care/bg.png";
-import art3 from "@/../../public/images/about/strategy3.png";
-import art4 from "@/../../public/images/about/strategy4.png";
 
 export default function Valuable() {
   const [hoveredItem, setHoveredItem] = useState(0);
@@ -20,14 +21,14 @@ export default function Valuable() {
     { image: value1, caption: "Evaluation" },
     { image: value2, caption: "Perks" },
     { image: value3, caption: "Holidays" },
-    { image: art4, caption: "Training" },
+    { image: value4, caption: "Training" },
   ];
 
   const items1 = [
     { image: happy1, caption: "Be a Happy soul-learning Yog" },
-    { image: balance, caption: 'Balance "gut" and "mind"' },
-    { image: art3, caption: 'Be a "believer"' },
-    { image: art4, caption: "It's never too late." },
+    { image: happy2, caption: 'Balance "gut" and "mind"' },
+    { image: happy3, caption: 'Be a "believer"' },
+    { image: happy4, caption: "It's never too late." },
   ];
 
   <Typography variant="h5">
